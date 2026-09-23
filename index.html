@@ -15,9 +15,9 @@
     <meta name="referrer" content="no-referrer" />
     <title>Thought Record · A little space to reflect</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <script type="module" crossorigin src="./assets/index-3ZeOY0oF.js"></script>
+    <script type="module" crossorigin src="./assets/index-DNe_9pSq.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/pdf-9LlTUw6H.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-CamI2gbM.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-CISAJOyg.css">
   </head>
   <body>
     <a class="skip-link" href="#record">Skip to your thought record</a>
@@ -131,6 +131,40 @@
               You don’t need to make sense of it yet. Just start with what
               happened.
             </p>
+            <fieldset class="record-date-field">
+              <legend>When was this moment?</legend>
+              <div class="date-options">
+                <label
+                  ><input type="radio" name="dateMode" value="now" checked />
+                  Now</label
+                >
+                <label
+                  ><input type="radio" name="dateMode" value="previous" />
+                  Previous date</label
+                >
+              </div>
+              <div id="previous-date-field" class="field" hidden>
+                <label for="record-date">Date of the moment</label>
+                <p class="field-help" id="record-date-help">
+                  Choose today or an earlier date. No time needed.
+                </p>
+                <input
+                  type="date"
+                  id="record-date"
+                  name="recordDate"
+                  min="0001-01-01"
+                  autocomplete="off"
+                  aria-describedby="record-date-help record-date-error"
+                  disabled
+                />
+                <p
+                  id="record-date-error"
+                  class="field-error"
+                  role="alert"
+                  hidden
+                ></p>
+              </div>
+            </fieldset>
             <div class="field">
               <label for="trigger">What happened?</label>
               <p class="field-help" id="trigger-help">
