@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta
+      name="description"
+      content="A quiet, private space to write a thought record and save it as a PDF. Your answers stay in your browser."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>Thought Record · A little space to reflect</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-3ZeOY0oF.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/pdf-9LlTUw6H.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CamI2gbM.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#record">Skip to your thought record</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Thought Record, back to top">
+        <svg
+          class="brand-mark"
+          viewBox="0 0 32 36"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M16 32V15M16 23C7 24 3 18 3 10c8 0 13 4 13 13ZM16 16C16 7 22 3 29 3c0 8-4 13-13 13Z"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        thought record<span class="wordmark-dot">.</span>
+      </a>
+      <span class="header-note"
+        ><span class="privacy-dot" aria-hidden="true"></span> A little space to
+        reflect</span
+      >
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">PAUSE. NOTICE. REFRAME.</p>
+          <h1 id="page-title">
+            Make room for a<br /><em>different thought.</em>
+          </h1>
+          <p class="intro-copy">
+            Put a moment into words. Explore what’s behind it.<br
+              class="desktop-break"
+            />
+            Find a perspective that gives you a little more room.
+          </p>
+        </div>
+        <div class="intro-art" aria-hidden="true">
+          <svg viewBox="0 0 250 240" fill="none">
+            <circle cx="127" cy="117" r="87" fill="#e7ecdf" />
+            <circle
+              cx="127"
+              cy="117"
+              r="108"
+              stroke="#d9dfcf"
+              stroke-dasharray="2 6"
+            />
+            <path
+              d="M123 199c4-47 2-90 20-145M128 141c-34 1-50-20-53-47 29 1 52 18 53 47ZM131 116c34 1 55-23 56-49-31 1-51 19-56 49ZM139 82c-17-9-23-25-19-43 16 7 26 21 19 43ZM125 173c28 0 45-14 49-34-25-3-46 10-49 34Z"
+              stroke="#788969"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M88 107c14 8 25 18 39 33M171 85c-17 13-27 22-40 31M160 148c-12 6-23 15-34 24"
+              stroke="#a5b194"
+              stroke-width="1.2"
+            />
+          </svg>
+          <span>one thought at a time</span>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <aside class="sidebar" aria-label="Worksheet guide">
+          <p class="eyebrow">YOUR THOUGHT RECORD</p>
+          <nav aria-label="Record sections">
+            <a href="#moment" aria-current="step"><span>01</span>The moment</a>
+            <a href="#closer"><span>02</span>A closer look</a>
+            <a href="#possibilities"><span>03</span>Other possibilities</a>
+            <a href="#balanced"><span>04</span>A balanced response</a>
+          </nav>
+          <div class="margin-note">
+            <span class="note-spark" aria-hidden="true">✳</span>
+            <h2>Take your time.</h2>
+            <p>
+              A few words are enough to begin. There’s no right way to fill this
+              out, and you can leave any question blank.
+            </p>
+          </div>
+          <p class="sidebar-footnote">
+            Based on the cognitive behavioral<br />therapy thought record.
+          </p>
+        </aside>
+
+        <form id="record" autocomplete="off" novalidate>
+          <noscript
+            ><p class="noscript">
+              JavaScript is needed to fill out this worksheet and create a PDF
+              in your browser.
+            </p></noscript
+          >
+          <section
+            class="record-section"
+            id="moment"
+            aria-labelledby="moment-title"
+          >
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <div>
+                <p class="eyebrow">NOTICE</p>
+                <h2 id="moment-title">Start with the moment</h2>
+              </div>
+            </div>
+            <p class="section-intro">
+              You don’t need to make sense of it yet. Just start with what
+              happened.
+            </p>
+            <div class="field">
+              <label for="trigger">What happened?</label>
+              <p class="field-help" id="trigger-help">
+                Describe the situation or trigger. Where were you, and what was
+                going on?
+              </p>
+              <textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="trigger"
+                name="trigger"
+                rows="3"
+                aria-describedby="trigger-help"
+                placeholder="The moment that brought this up…"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="thoughts">What went through your mind?</label>
+              <p class="field-help" id="thoughts-help">
+                Include any thoughts, images, assumptions, or beliefs.
+              </p>
+              <textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="thoughts"
+                name="thoughts"
+                rows="3"
+                aria-describedby="thoughts-help"
+                placeholder="I found myself thinking…"
+              ></textarea>
+            </div>
+            <fieldset class="belief-field">
+              <legend>How strongly did you believe that thought?</legend>
+              <p class="field-help" id="belief-help">
+                Choose a number from 1 to 7, or leave this unanswered.
+              </p>
+              <div class="belief-scale" aria-describedby="belief-help">
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="1"
+                    aria-label="1, not very strongly"
+                  /><span>1</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="2"
+                    aria-label="2 out of 7"
+                  /><span>2</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="3"
+                    aria-label="3 out of 7"
+                  /><span>3</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="4"
+                    aria-label="4 out of 7"
+                  /><span>4</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="5"
+                    aria-label="5 out of 7"
+                  /><span>5</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="6"
+                    aria-label="6 out of 7"
+                  /><span>6</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="beliefStrength"
+                    value="7"
+                    aria-label="7, very strongly"
+                  /><span>7</span></label
+                >
+              </div>
+              <div class="scale-labels">
+                <span>Not very strongly</span
+                ><button id="reset-belief" type="button" hidden>
+                  Reset rating</button
+                ><span>Very strongly</span>
+              </div>
+            </fieldset>
+          </section>
+
+          <section
+            class="record-section"
+            id="closer"
+            aria-labelledby="closer-title"
+          >
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <div>
+                <p class="eyebrow">EXPLORE</p>
+                <h2 id="closer-title">Look a little closer</h2>
+              </div>
+            </div>
+            <p class="section-intro">
+              A thought can feel convincing and still leave part of the picture
+              out.
+            </p>
+            <div class="field">
+              <label for="challenges">What challenges this thought?</label>
+              <p class="field-help" id="challenges-help">
+                What facts, experiences, or missing information might point to
+                another explanation?
+              </p>
+              <textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="challenges"
+                name="challenges"
+                rows="3"
+                aria-describedby="challenges-help"
+                placeholder="Something I might be overlooking…"
+              ></textarea>
+            </div>
+            <fieldset class="thinking-field">
+              <legend>Types of thinking errors</legend>
+              <p class="field-help" id="distortions-help">
+                Do any of these patterns feel familiar? Select all that fit, or
+                leave them blank.
+              </p>
+              <div
+                id="distortion-options"
+                class="distortion-grid"
+                aria-describedby="distortions-help"
+              ></div>
+              <p class="source-note">
+                The ten categories are from
+                <a
+                  href="https://www.skylandtrail.org/10-common-types-of-cognitive-distortions/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Skyland Trail <span aria-hidden="true">↗</span></a
+                >.
+              </p>
+            </fieldset>
+          </section>
+
+          <section
+            class="record-section"
+            id="possibilities"
+            aria-labelledby="possibilities-title"
+          >
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <div>
+                <p class="eyebrow">WIDEN THE VIEW</p>
+                <h2 id="possibilities-title">Consider another possibility</h2>
+              </div>
+            </div>
+            <p class="section-intro">
+              Give yourself room to consider more than one way this could turn
+              out.
+            </p>
+            <div class="field">
+              <label for="worstOutcome"
+                >What’s the worst possible outcome?</label
+              ><textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="worstOutcome"
+                name="worstOutcome"
+                rows="3"
+                placeholder="What I’m worried could happen…"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="bestOutcome">What’s the best possible outcome?</label
+              ><textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="bestOutcome"
+                name="bestOutcome"
+                rows="3"
+                placeholder="If things went well…"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="realisticOutcome"
+                >What’s the most realistic outcome?</label
+              >
+              <p class="field-help" id="realistic-help">
+                Considering what you know, what seems most likely?
+              </p>
+              <textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="realisticOutcome"
+                name="realisticOutcome"
+                rows="3"
+                aria-describedby="realistic-help"
+                placeholder="A more likely possibility is…"
+              ></textarea>
+            </div>
+          </section>
+
+          <section
+            class="record-section"
+            id="balanced"
+            aria-labelledby="balanced-title"
+          >
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <div>
+                <p class="eyebrow">REFRAME</p>
+                <h2 id="balanced-title">Find a balanced response</h2>
+              </div>
+            </div>
+            <p class="section-intro">
+              Bring together what you feel and what you’ve noticed.
+            </p>
+            <div class="field">
+              <label for="feelings"
+                >How does this thought affect your feelings?</label
+              ><textarea
+                spellcheck="false"
+                autocorrect="off"
+                autocomplete="off"
+                id="feelings"
+                name="feelings"
+                rows="3"
+                placeholder="When I think this, I feel…"
+              ></textarea>
+            </div>
+            <div class="balanced-prompt">
+              <p class="eyebrow">PUT IT INTO WORDS</p>
+              <div class="field">
+                <label for="feltTruth">Even though I feel that…</label>
+                <p class="field-help" id="felt-help">
+                  Write the thought or assumption that feels true.
+                </p>
+                <textarea
+                  spellcheck="false"
+                  autocorrect="off"
+                  autocomplete="off"
+                  id="feltTruth"
+                  name="feltTruth"
+                  rows="3"
+                  aria-describedby="felt-help"
+                  placeholder="The thought that feels true…"
+                ></textarea>
+              </div>
+              <div class="field">
+                <label for="balancedTruth">…the reality is that…</label>
+                <p class="field-help" id="balanced-help">
+                  Use the evidence and other viewpoints you explored above.
+                </p>
+                <textarea
+                  spellcheck="false"
+                  autocorrect="off"
+                  autocomplete="off"
+                  id="balancedTruth"
+                  name="balancedTruth"
+                  rows="3"
+                  aria-describedby="balanced-help"
+                  placeholder="A more balanced way to see this…"
+                ></textarea>
+              </div>
+            </div>
+            <p class="closing-note">
+              You can return to any section, or save what you have.
+            </p>
+          </section>
+          <p class="worksheet-footer">A moment of reflection, on your terms.</p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="action-bar">
+      <div class="action-inner">
+        <div class="privacy-note">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect
+              x="5"
+              y="10"
+              width="14"
+              height="11"
+              rx="3"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          <div>
+            <strong>Your thoughts stay yours.</strong>
+            <p>We never store your entries. Refreshing clears this page.</p>
+            <p
+              id="save-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </div>
+        </div>
+        <div class="actions">
+          <button
+            id="clear"
+            class="button button-secondary"
+            type="button"
+            disabled
+          >
+            Clear</button
+          ><button
+            id="save"
+            class="button button-primary"
+            type="button"
+            disabled
+          >
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path
+                d="M10 2v10m-4-4 4 4 4-4M3 13v4h14v-4"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            ><span id="save-label">Save PDF</span>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog
+      id="clear-dialog"
+      aria-labelledby="clear-title"
+      aria-describedby="clear-description"
+    >
+      <div class="dialog-content">
+        <p class="eyebrow">A FRESH PAGE</p>
+        <h2 id="clear-title">Clear this thought record?</h2>
+        <p id="clear-description">
+          Your answers will be removed from this page. Any PDFs you already
+          downloaded will stay on your device.
+        </p>
+        <div class="dialog-actions">
+          <button
+            id="cancel-clear"
+            class="button button-secondary"
+            type="button"
+            autofocus
+          >
+            Keep writing</button
+          ><button
+            id="confirm-clear"
+            class="button button-primary"
+            type="button"
+          >
+            Clear record
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
